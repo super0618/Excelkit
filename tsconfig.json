@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/config/*": ["config/*"],
+      "@/components/*": ["common/components/*"],
+      "@/services/*": ["common/services/*"],
+      "@/utils/*": ["common/utils/*"],
+      "@/interfaces/*": ["interfaces/*"],
+      "@/hooks/*": ["common/hooks/*"],
+      "@/tests/*": ["../tests/*"],
+      "@/content/*": ["content/*"],
+      "@/features/*": ["features/*"]
+    },
+    "allowJs": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["dom", "es2017"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "target": "esnext",
+    "incremental": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/**.js",
+    ".next/types/**/*.ts",
+    "node_modules/@silevis/reactgrid/dist/reactgrid.d.ts",
+    "./vendor.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "functions",
+    "node_modules/*",
+    "node_modules/htmlparser2/lib/index.d.ts"
+  ]
+}
